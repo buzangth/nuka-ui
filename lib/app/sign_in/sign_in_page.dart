@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nuka_ui/app/sign_in/sign_in_button.dart';
+import 'package:nuka_ui/common/custom_raised_butten.dart';
 
 class SignInPage extends StatelessWidget {
   @override
@@ -8,6 +10,7 @@ class SignInPage extends StatelessWidget {
         title: Text('Nuka'),
       ),
       body: _buildContent(),
+      backgroundColor: Colors.grey[200],
     );
   }
 }
@@ -30,29 +33,29 @@ Widget _buildContent() {
         SizedBox(
           height: 8.0,
         ),
-        RaisedButton(
-          child: Text('Sign in with Google'),
-          onPressed: () {
-            print("passed google");
-          },
+        SignInButton(
+          text: 'Sign In With Google',
+          color: Colors.white,
+          textColor: Colors.black87,
+          onPressed: () {},
         ),
         SizedBox(
           height: 8.0,
         ),
-        RaisedButton(
-          child: Text('Sign in with Facebook'),
-          onPressed: () {
-            print("passed facebook");
-          },
+        SignInButton(
+          text: 'Sign In With Facebook',
+          color: Colors.lightBlue,
+          textColor: Colors.black87,
+          onPressed: () {},
         ),
         SizedBox(
           height: 8.0,
         ),
-        RaisedButton(
-          child: Text('Sign in with Email'),
-          onPressed: () {
-            print("passed email");
-          },
+        SignInButton(
+          text: 'Sign In With Email',
+          color: Colors.red,
+          textColor: Colors.black87,
+          onPressed: () {},
         ),
         SizedBox(
           height: 8.0,
@@ -68,13 +71,15 @@ Widget _buildContent() {
         SizedBox(
           height: 8.0,
         ),
-        RaisedButton(
-          child: Text('Sign in with Announimously'),
-          onPressed: () {
-            print("passed announse");
-          },
+        SignInButton(
+          text: 'Sign In As Guest',
+          color: Colors.black,
+          textColor: Colors.white,
+          onPressed: () {},
         ),
       ],
     ),
   );
 }
+
+//void _signInWithGoogle() {}
