@@ -31,7 +31,7 @@ Widget _buildContent() {
           ),
         ),
         SizedBox(
-          height: 8.0,
+          height: 48.0,
         ),
         SignInButton(
           text: 'Sign In With Google',
@@ -44,8 +44,8 @@ Widget _buildContent() {
         ),
         SignInButton(
           text: 'Sign In With Facebook',
-          color: Colors.lightBlue,
-          textColor: Colors.black87,
+          color: Color(0xFF334D92),
+          textColor: Colors.white,
           onPressed: () {},
         ),
         SizedBox(
@@ -53,8 +53,8 @@ Widget _buildContent() {
         ),
         SignInButton(
           text: 'Sign In With Email',
-          color: Colors.red,
-          textColor: Colors.black87,
+          color: Colors.teal[700],
+          textColor: Colors.white,
           onPressed: () {},
         ),
         SizedBox(
@@ -77,6 +77,10 @@ Widget _buildContent() {
           textColor: Colors.white,
           onPressed: () {},
         ),
+        CustomRaisedButton(
+          child: Image.asset('images/google-logo.png'),
+          color: Colors.white,
+        )
       ],
     ),
   );
