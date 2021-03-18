@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "653197720469",
+    "project_id": "nuka-app",
+    "storage_bucket": "nuka-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653197720469:android:749a2eeb8387a2113dd49c",
+        "android_client_info": {
+          "package_name": "com.genetics.nuka_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653197720469-642lv84sp5s0u2pr73b64f7gldhg9t7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.genetics.nuka_ui",
+            "certificate_hash": "ee3567801e38c21cd37d263ae4b945cb81504509"
+          }
+        },
+        {
+          "client_id": "653197720469-3uqfhp23cni6u7ohgmluhrmgf23uvhee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXUQiIekL-WN4iOEQrQEarFSV-MiMFDoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653197720469-3uqfhp23cni6u7ohgmluhrmgf23uvhee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
