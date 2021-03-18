@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nuka_ui/common/custom_raised_butten.dart';
+import 'package:nuka_ui/common/custom_raised_button.dart';
 
 class SignInButton extends CustomRaisedButton {
   SignInButton({

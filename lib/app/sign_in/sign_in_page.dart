@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:nuka_ui/app/sign_in/sign_in_button.dart';
-import 'package:nuka_ui/common/custom_raised_butten.dart';
+import 'package:nuka_ui/app/sign_in/social_sign_in_button.dart';
+
 
 class SignInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Nuka'),
+        title: Text('Nuka',textAlign: TextAlign.center,),
+        
       ),
       body: _buildContent(),
       backgroundColor: Colors.grey[200],
@@ -33,7 +35,8 @@ Widget _buildContent() {
         SizedBox(
           height: 48.0,
         ),
-        SignInButton(
+        SocialSignInButton(
+          assetName: 'images/google-logo.png',
           text: 'Sign In With Google',
           color: Colors.white,
           textColor: Colors.black87,
@@ -42,7 +45,8 @@ Widget _buildContent() {
         SizedBox(
           height: 8.0,
         ),
-        SignInButton(
+        SocialSignInButton(
+          assetName: 'images/facebook-logo.png',
           text: 'Sign In With Facebook',
           color: Color(0xFF334D92),
           textColor: Colors.white,
@@ -77,10 +81,7 @@ Widget _buildContent() {
           textColor: Colors.white,
           onPressed: () {},
         ),
-        CustomRaisedButton(
-          child: Image.asset('images/google-logo.png'),
-          color: Colors.white,
-        )
+       
       ],
     ),
   );
